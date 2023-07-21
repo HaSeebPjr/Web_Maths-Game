@@ -1,0 +1,14 @@
+{
+  "name": "8.Math-Game",
+  "version": "1.0.0",
+  "description": "Math Game",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass style.scss style.css -w"
+  },
+  "author": "HaSeeb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+        div.game-container{
+            background-color: rgba(102, 212, 255, 0.913);
+            width: 700px;
+            height: 400px;
+            display: grid;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+            grid-gap: 10px;
+            text-align: center;
+
+            div.score{
+                line-height: 15px;
+                grid-column: span 5;
+                margin: 10px;
+                p{
+                    background: yellow;
+                    height: 35px;
+                    padding: 10px;
+                    float: right;
+                }
+            }
+
+            div.output{
+                background-color: red;
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            div.text{
+                background-color: orange;
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            div.answers{
+                background-color: hotpink;
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 4;
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        float: left;
+                        background-color: #fff;
+                        width: 60px;
+                        height: 60px;
+                        padding: 20px;
+                        margin: 20px;
+                    }
+                }
+            }
+
+            div.reset{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 5;
+                grid-row-end: 5;
+            }
+
+            div.timeRemain{
+                grid-column-start: 5;
+                grid-column-end: 5;
+                grid-row-start: 5;
+                grid-row-end: 5;
+                margin: 10px;
+            }
+
+            button{
+                height: 40px;
+                width: 120px;
+                outline: none;
+            }
+    }
+}
